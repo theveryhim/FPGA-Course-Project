@@ -1,0 +1,61 @@
+09:41:02 **** Auto Build of configuration Debug for project dma_ad ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/wave/wave.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/wave/wave.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_ad_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/wave/wave.d" -MT"src/wave/wave.o" -o "src/wave/wave.o" "../src/wave/wave.c"
+'Finished building: ../src/wave/wave.c'
+' '
+'Building file: ../src/i2c/PS_i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c/PS_i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_ad_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c/PS_i2c.d" -MT"src/i2c/PS_i2c.o" -o "src/i2c/PS_i2c.o" "../src/i2c/PS_i2c.c"
+../src/i2c/PS_i2c.c: In function 'i2c_wrtie_bytes':
+../src/i2c/PS_i2c.c:50:2: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+  usleep(2500);
+  ^~~~~~
+'Finished building: ../src/i2c/PS_i2c.c'
+' '
+'Building file: ../src/dynclk/dynclk.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dynclk/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_ad_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dynclk/dynclk.d" -MT"src/dynclk/dynclk.o" -o "src/dynclk/dynclk.o" "../src/dynclk/dynclk.c"
+'Finished building: ../src/dynclk/dynclk.c'
+' '
+'Building file: ../src/display_ctrl/display_ctrl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_ctrl/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_ad_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_ctrl/display_ctrl.d" -MT"src/display_ctrl/display_ctrl.o" -o "src/display_ctrl/display_ctrl.o" "../src/display_ctrl/display_ctrl.c"
+'Finished building: ../src/display_ctrl/display_ctrl.c'
+' '
+'Building file: ../src/adc_dma_ctrl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/adc_dma_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_ad_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/adc_dma_ctrl.d" -MT"src/adc_dma_ctrl.o" -o "src/adc_dma_ctrl.o" "../src/adc_dma_ctrl.c"
+In file included from ../src/adc_dma_ctrl.c:5:0:
+../src/adc_dma_ctrl.c: In function 'XAxiDma_Adc_Wave':
+../src/adc_dma_ctrl.h:17:25: error: 'XPAR_AXIDMA_1_DEVICE_ID' undeclared (first use in this function)
+ #define DMA_1_DEV_ID    XPAR_AXIDMA_1_DEVICE_ID
+                         ^
+../src/adc_dma_ctrl.c:63:24: note: in expansion of macro 'DMA_1_DEV_ID'
+  XAxiDma_Write_Initial(DMA_1_DEV_ID, S2MM_INTR_ID, &AxiDma_1, InstancePtr) ;
+                        ^~~~~~~~~~~~
+../src/adc_dma_ctrl.h:17:25: note: each undeclared identifier is reported only once for each function it appears in
+ #define DMA_1_DEV_ID    XPAR_AXIDMA_1_DEVICE_ID
+                         ^
+../src/adc_dma_ctrl.c:63:24: note: in expansion of macro 'DMA_1_DEV_ID'
+  XAxiDma_Write_Initial(DMA_1_DEV_ID, S2MM_INTR_ID, &AxiDma_1, InstancePtr) ;
+                        ^~~~~~~~~~~~
+../src/adc_dma_ctrl.h:19:28: error: 'XPAR_FABRIC_AXI_DMA_1_S2MM_INTROUT_INTR' undeclared (first use in this function)
+ #define S2MM_INTR_ID       XPAR_FABRIC_AXI_DMA_1_S2MM_INTROUT_INTR
+                            ^
+../src/adc_dma_ctrl.h:19:28: note: in definition of macro 'S2MM_INTR_ID'
+ #define S2MM_INTR_ID       XPAR_FABRIC_AXI_DMA_1_S2MM_INTROUT_INTR
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/adc_dma_ctrl.h:18:28: error: 'XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR' undeclared (first use in this function)
+ #define MM2S_INTR_ID       XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR
+                            ^
+../src/adc_dma_ctrl.h:18:28: note: in definition of macro 'MM2S_INTR_ID'
+ #define MM2S_INTR_ID       XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/adc_dma_ctrl.o] Error 1
+
+09:41:05 Build Finished (took 3s.272ms)
+

@@ -1,0 +1,28 @@
+Command line:
+   Deheader_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62134
+
+Wed Jul 03 06:18:33 2024
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5154.69 Meg
+
+ Total Signals          : 18
+ Total Nets             : 66
+ Total Signal Drivers   : 20
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 25
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 247
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 5469.26 Meg
+
+Wed Jul 03 06:19:08 2024
+
