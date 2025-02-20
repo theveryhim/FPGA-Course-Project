@@ -22,4 +22,4 @@ What folder *scrambler* contains.
     <img src="Header.jpg" alt="Descriptive Alt Text" height="50">
 </p>
 
-What folder *Descrambler-Deheader* contains.
+What folder *Descrambler-Deheader* contains(Header detection).
