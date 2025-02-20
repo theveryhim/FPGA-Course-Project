@@ -7,19 +7,19 @@ to reset our Descrambler.
 for a more detailed description, you may read *Report02*
 
 <p align="center">
-    <img src="sigGen.jpg" alt="Descriptive Alt Text" height="100">
+    <img src="sigGen.jpg" alt="Descriptive Alt Text" height="200">
 </p>
 
 What folder *Signal generator-Header* contains.
 
 <p align="center">
-    <img src="Scrambler.jpg" alt="Descriptive Alt Text" height="100">
+    <img src="Scrambler.jpg" alt="Descriptive Alt Text" height="300">
 </p>
 
 What folder *scrambler* contains.
 
 <p align="center">
-    <img src="Header.jpg" alt="Descriptive Alt Text" height="100">
+    <img src="Header.jpg" alt="Descriptive Alt Text" height="50">
 </p>
 
 What folder *Descrambler-Deheader* contains.

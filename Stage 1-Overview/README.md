@@ -5,7 +5,7 @@ the appropriate configuration for DMA. By pressing 1KEY_PS, the sent signal to t
 between the four created signals.
 
 <p align="center">
-    <img src="flow.jpg" alt="Descriptive Alt Text" height="100">
+    <img src="flow.jpg" alt="Descriptive Alt Text" height="300">
 </p>
 
 for a more detailed description, you may read *Report01*
